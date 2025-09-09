@@ -26,13 +26,14 @@
 
 - **CustomerLsit:** Displays the list of customers.
 - **CustomerDetails:** Shows detailed information for a selected customer transactions.
-
+- **Transctions List:** Shows all rewards inof for a selected month.
 ### Working Screenshots
 
 Below are screenshots demonstrating the application in action:
 
-![Reward List Screenshot](image.png)
-![Reward Details Screenshot](image-1.png)
+![Customer List Screenshot](image.png)
+![Transcations List](image-1.png)
+![Transctions By Month](image-2.png)
 
 ### Success Screenshots of Test Cases
 
@@ -41,7 +42,3 @@ Below are screenshots demonstrating the application in action:
 ---
 
 For more details, refer to the inline comments in the source code.
-
-![alt text](image.png)
-
-![alt text](image-1.png)
