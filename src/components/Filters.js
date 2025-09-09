@@ -24,24 +24,13 @@ const Label = styled.label`
   gap: 4px;
 `;
 
-const Filters = ({customers, selectedCustomer, onSelectCustomer, year, month, onYearChange, onMonthChange}) => {
+const Filters = ({ year, month, onYearChange, onMonthChange}) => {
   return (
     <FiltersContainer>
-      <Label>
-        Customer
-        <Select value={selectedCustomer || ''} onChange={(e) => onSelectCustomer(e.target.value || null)}>
-          <option value="">All</option>
-          {customers.map((customer) => (
-            <option key={customer.id} value={customer.id}>
-              {customer.name}
-            </option>
-          ))}
-        </Select>
-      </Label>
+      <h3>Filters</h3>
       <Label>
         Year
         <Select value={year || ''} onChange={(e) => onYearChange(e.target.value || null)}>
-          <option value="">All</option>
           {YEARS.map((year) => (
             <option key={year} value={year}>
               {year}
@@ -52,7 +41,7 @@ const Filters = ({customers, selectedCustomer, onSelectCustomer, year, month, on
       <Label>
         Month
         <Select value={month || ''} onChange={(e) => onMonthChange(e.target.value || null)}>
-          <option value="">All</option>
+          <option value="">Last three months</option>
           {MONTHS.map((month) => (
             <option key={month.value} value={month.value}>
               {month.label}
@@ -60,7 +49,6 @@ const Filters = ({customers, selectedCustomer, onSelectCustomer, year, month, on
           ))}
         </Select>
       </Label>
-      <div>Default shows last 3 months</div>
     </FiltersContainer>
   );
 }

@@ -1,12 +1,11 @@
 import {rewardCalculator} from '../utils/rewardCalculator';
-// provide three positive and three negative test cases
 
 test("calculates rewards correctly for amount 120", () =>{
     expect(rewardCalculator(120)).toBe(90);
 })
 
 test("calculates rewards correctly for amount 150", () =>{
-    expect(rewardCalculator(150)).toBe(120);
+    expect(rewardCalculator(150)).toBe(150);
 })
 
 test("calculates rewards correctly for amount 200", () =>{
